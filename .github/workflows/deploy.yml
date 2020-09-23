@@ -22,10 +22,12 @@ jobs:
         with:
           repository: ai4everyone/ml2scratch
           path: ./ml2scratch
+          ref: master
       - uses: actions/checkout@v2
         with:
           repository: ai4everyone/posenet2scratch
           path: ./posenet2scratch
+          ref: master
       - uses: actions/checkout@v2
         with:
           repository: yokobond/scratch-microbit-more

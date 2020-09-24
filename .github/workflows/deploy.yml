@@ -72,7 +72,6 @@ jobs:
       - run: sh ./speech2scratch/install.sh
       - run: sh ./scratch3-qrcode/install.sh
       - run: sh ./scratch3/pasorich/install.sh
-      - run: sh ./handpose2scratch/install.sh
       - run: sh ./facemesh2scratch/install.sh
       - run: sh ./scratch2maqueen/install.sh
       - run: sh ./tm2scratch/install.sh
@@ -82,6 +81,7 @@ jobs:
       - run: sh ./ml2scratch/install.sh
       - run: sh ./scratch3/add_ga_tracking_code.sh
       - run: sh ./dataviewer/install.sh
+      - run: sh ./handpose2scratch/install.sh
       - run: npm run build
       - run: cp ./scratch3/index.html ./build/index.html
       - uses: peaceiris/actions-gh-pages@v3

@@ -22,12 +22,10 @@ jobs:
         with:
           repository: ai4everyone/ml2scratch
           path: ./ml2scratch
-          ref: master
       - uses: actions/checkout@v2
         with:
           repository: ai4everyone/posenet2scratch
           path: ./posenet2scratch
-          ref: master
       - uses: actions/checkout@v2
         with:
           repository: yokobond/scratch-microbit-more
@@ -42,7 +40,7 @@ jobs:
           path: ./scratch2maqueen
       - uses: actions/checkout@v2
         with:
-          repository: ai4everyone/handpose2scratch
+          repository: champierre/handpose2scratch
           path: ./handpose2scratch
       - uses: actions/checkout@v2
         with:
@@ -69,10 +67,10 @@ jobs:
           repository: dr-data/dataviewer
           path: ./dataviewer
       - run: sh ./ic2scratch/install.sh
-      - run: sh ./handpose2scratch/install.sh
       - run: sh ./speech2scratch/install.sh
       - run: sh ./scratch3-qrcode/install.sh
       - run: sh ./scratch3/pasorich/install.sh
+      - run: sh ./handpose2scratch/install.sh
       - run: sh ./facemesh2scratch/install.sh
       - run: sh ./scratch2maqueen/install.sh
       - run: sh ./tm2scratch/install.sh
